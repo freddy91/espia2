@@ -78,6 +78,8 @@ function generateSeed() {
 
 function nuevoLugar(){
 	currentLugar.innerHTML = form.nuevo.value;
+	
+	locations.push(form.nuevo.value);
 
 }
 
