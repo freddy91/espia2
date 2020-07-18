@@ -83,7 +83,7 @@ function nuevoLugar(){
 	
 	locations.push(form.nuevo.value);
 	
-	nuevo.innerHTML = '';
+	nuevo.value = '';
 
 }
 
