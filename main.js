@@ -75,6 +75,12 @@ function generateSeed() {
 	form.oninput();
 }
 
+
+function nuevoLugar(){
+	currentLugar.innerHTML = form.nuevo.value;
+
+}
+
 function selectInput(input) {
 	setTimeout(function() {
 		try {
