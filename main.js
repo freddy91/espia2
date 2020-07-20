@@ -67,16 +67,17 @@ function revealLocation(event) {
 	}else{
 		currentLocation.innerHTML = myChance.pickone(locations);
 	}
-	
+	empezar = myChance.integer({min: 1, max: parseInt(form.numPlayers.value)});
 	while(flagC == 0){
 		
-		empezar = myChance.integer({min: 1, max: parseInt(form.numPlayers.value)});
+		
 	
 		
 		for ( i=0 ;i < espias.length ; i++){
 			array[i] = empezar; 
 			if(espias[i] == empezar){
 				flagC = 0;
+				empezar = myChance.integer({min: 1, max: parseInt(form.numPlayers.value)});
 			}else{
 				flagC = 1;
 			}
