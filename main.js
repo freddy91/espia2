@@ -67,10 +67,13 @@ function revealLocation(event) {
 		currentLocation.innerHTML = spyString;
 	}else{
 		currentLocation.innerHTML = myChance.pickone(locations);
+		empezar = myChance.integer({min: 1, max: parseInt(form.numPlayers.value)});
+		currentEmpezar.innerHTML = empezar;
+		
 	}
-	empezar = myChance.integer({min: 1, max: parseInt(form.numPlayers.value)});
+	
 		prueba = empezar;
-	while(flagC == 0){
+	/*while(flagC == 0){
 		
 		
 	
@@ -88,7 +91,7 @@ function revealLocation(event) {
 	
 	}
 		currentEmpezar.innerHTML = array;
-		currentPrueba.innerHTML = prueba;
+		currentPrueba.innerHTML = prueba;*/
 	
 	}
 	
