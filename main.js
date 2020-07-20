@@ -81,9 +81,11 @@ function revealLocation(event) {
 		}
 	
 	}
+		currentEmpezar.innerHTML = empezar;
 	
 	}
-	currentEmpezar.innerHTML = empezar;
+	
+
 		
 }
 
