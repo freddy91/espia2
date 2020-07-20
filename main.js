@@ -30,6 +30,7 @@ function revealLocation(event) {
 	let spy;
 	var flagC = 0;
 	var empezar = 0;
+	var prueba = 0;
 	var array = []
 	
 		
@@ -68,6 +69,7 @@ function revealLocation(event) {
 		currentLocation.innerHTML = myChance.pickone(locations);
 	}
 	empezar = myChance.integer({min: 1, max: parseInt(form.numPlayers.value)});
+		prueba = empezar;
 	while(flagC == 0){
 		
 		
@@ -86,6 +88,7 @@ function revealLocation(event) {
 	
 	}
 		currentEmpezar.innerHTML = array;
+		currentPrueba.innerHTML = prueba;
 	
 	}
 	
