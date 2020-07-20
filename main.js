@@ -30,6 +30,7 @@ function revealLocation(event) {
 	let spy;
 	var flagC = 0;
 	var empezar = 0;
+	var array = []
 	
 		
 	if ( numEspia >=  parseInt(form.numPlayers.value) ) {
@@ -70,8 +71,10 @@ function revealLocation(event) {
 	while(flagC == 0){
 		
 		empezar = myChance.integer({min: 1, max: parseInt(form.numPlayers.value)});
+	
 		
-		for ( i=0 ;i < numEspia ; i++){
+		for ( i=0 ;i < espias.length ; i++){
+			array[i] = empezar; 
 			if(espias[i] == empezar){
 				flagC = 0;
 			}else{
@@ -81,7 +84,7 @@ function revealLocation(event) {
 		}
 	
 	}
-		currentEmpezar.innerHTML = empezar;
+		currentEmpezar.innerHTML = array;
 	
 	}
 	
