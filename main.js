@@ -85,7 +85,7 @@ function revealLocation(event) {
 		}
 	
 	}
-		currentEmpezar.innerHTML = array;
+		currentEmpezar.innerHTML =empezar;
 	
 	}
 	
