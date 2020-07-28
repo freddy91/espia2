@@ -68,7 +68,7 @@ function revealLocation(event) {
 	}else{
 		currentLocation.innerHTML = myChance.pickone(locations);
 		empezar = myChance.integer({min: 1, max: parseInt(form.numPlayers.value)});
-		currentEmpezar.innerHTML ="1.png";
+		currentEmpezar.innerHTML ="<img src=\"1.png" width=\"400px\" height=\"150px\">";
 		
 	}
 	
